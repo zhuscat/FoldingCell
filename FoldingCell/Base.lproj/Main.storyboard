@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RKB-fK-zMw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="Ar7-Md-Nl7">
+            <objects>
+                <tableViewController id="RKB-fK-zMw" customClass="TableViewController" customModule="FoldingCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="667" sectionHeaderHeight="28" sectionFooterHeight="28" id="2QO-PO-je9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="identifier" rowHeight="667" id="4zq-2B-7Wm" customClass="FoldingCell" customModule="FoldingCell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4zq-2B-7Wm" id="Nc6-Ae-AhP">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="666.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1Q-ne-lkE" customClass="RotationView" customModule="FoldingCell" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="8" width="584" height="180"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="HUf-j5-CeX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="584" height="180"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="vPm-ST-3e8"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="vPm-ST-3e8"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="HUf-j5-CeX" firstAttribute="leading" secondItem="p1Q-ne-lkE" secondAttribute="leading" id="03y-aU-gg5"/>
+                                                <constraint firstAttribute="trailing" secondItem="HUf-j5-CeX" secondAttribute="trailing" id="0ET-qg-0YA"/>
+                                                <constraint firstAttribute="bottom" secondItem="HUf-j5-CeX" secondAttribute="bottom" id="0rY-xQ-DhH"/>
+                                                <constraint firstAttribute="trailing" secondItem="HUf-j5-CeX" secondAttribute="trailing" id="Dqs-4w-I0W"/>
+                                                <constraint firstItem="HUf-j5-CeX" firstAttribute="top" secondItem="p1Q-ne-lkE" secondAttribute="top" id="GbL-JX-aiW"/>
+                                                <constraint firstAttribute="bottom" secondItem="HUf-j5-CeX" secondAttribute="bottom" id="ORF-0c-2Z3"/>
+                                                <constraint firstAttribute="height" constant="180" id="U4D-Qi-6Cd"/>
+                                                <constraint firstAttribute="height" constant="128" id="c8q-wp-szc"/>
+                                                <constraint firstItem="HUf-j5-CeX" firstAttribute="top" secondItem="p1Q-ne-lkE" secondAttribute="top" id="heV-26-sR7"/>
+                                                <constraint firstItem="HUf-j5-CeX" firstAttribute="leading" secondItem="p1Q-ne-lkE" secondAttribute="leading" id="zlS-c3-6Je"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="c8q-wp-szc"/>
+                                                    <exclude reference="0ET-qg-0YA"/>
+                                                    <exclude reference="0rY-xQ-DhH"/>
+                                                    <exclude reference="GbL-JX-aiW"/>
+                                                    <exclude reference="zlS-c3-6Je"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0IJ-5a-bKB" customClass="RotationView" customModule="FoldingCell" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="190" width="584" height="550"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="Pd3-3d-Vl6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="584" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="qrI-2z-YWY"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv3-rI-Nx8">
+                                                    <rect key="frame" x="8" y="216" width="156.5" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOM-fu-61M">
+                                                    <rect key="frame" x="8" y="265" width="568" height="162.5"/>
+                                                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="Fv3-rI-Nx8" firstAttribute="leading" secondItem="0IJ-5a-bKB" secondAttribute="leading" constant="8" id="3PN-wP-o4v"/>
+                                                <constraint firstAttribute="height" constant="550" id="3qZ-9p-oBl"/>
+                                                <constraint firstItem="Pd3-3d-Vl6" firstAttribute="leading" secondItem="0IJ-5a-bKB" secondAttribute="leading" id="5TK-xg-S3I"/>
+                                                <constraint firstItem="gOM-fu-61M" firstAttribute="leading" secondItem="0IJ-5a-bKB" secondAttribute="leading" constant="8" id="8lB-PF-JR5"/>
+                                                <constraint firstItem="gOM-fu-61M" firstAttribute="top" secondItem="Fv3-rI-Nx8" secondAttribute="bottom" constant="16" id="FWG-BV-6w4"/>
+                                                <constraint firstItem="Pd3-3d-Vl6" firstAttribute="top" secondItem="0IJ-5a-bKB" secondAttribute="top" id="NdW-Gn-99t"/>
+                                                <constraint firstAttribute="trailing" secondItem="Pd3-3d-Vl6" secondAttribute="trailing" id="O45-2y-Alf"/>
+                                                <constraint firstAttribute="trailing" secondItem="gOM-fu-61M" secondAttribute="trailing" constant="8" id="Oxe-bq-dhk"/>
+                                                <constraint firstItem="Fv3-rI-Nx8" firstAttribute="top" secondItem="Pd3-3d-Vl6" secondAttribute="bottom" constant="16" id="Ris-Qk-mRD"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="p1Q-ne-lkE" firstAttribute="top" secondItem="Nc6-Ae-AhP" secondAttribute="topMargin" id="2qg-1c-tUH"/>
+                                        <constraint firstItem="p1Q-ne-lkE" firstAttribute="top" secondItem="Nc6-Ae-AhP" secondAttribute="top" constant="8" id="56Y-mQ-xq8"/>
+                                        <constraint firstAttribute="trailing" secondItem="0IJ-5a-bKB" secondAttribute="trailing" constant="8" id="5Uh-zr-rCu"/>
+                                        <constraint firstItem="0IJ-5a-bKB" firstAttribute="leading" secondItem="Nc6-Ae-AhP" secondAttribute="leading" constant="8" id="7l6-hj-4rg"/>
+                                        <constraint firstItem="p1Q-ne-lkE" firstAttribute="leading" secondItem="Nc6-Ae-AhP" secondAttribute="leading" constant="8" id="Hrw-w6-t2l"/>
+                                        <constraint firstAttribute="trailing" secondItem="p1Q-ne-lkE" secondAttribute="trailing" constant="8" id="I2m-DC-Bgb"/>
+                                        <constraint firstAttribute="bottom" secondItem="0IJ-5a-bKB" secondAttribute="bottom" constant="600" id="IkW-fM-OJo"/>
+                                        <constraint firstItem="p1Q-ne-lkE" firstAttribute="trailing" secondItem="Nc6-Ae-AhP" secondAttribute="trailingMargin" id="QtS-40-fcr"/>
+                                        <constraint firstItem="p1Q-ne-lkE" firstAttribute="leading" secondItem="Nc6-Ae-AhP" secondAttribute="leadingMargin" id="Vq7-nw-uTy"/>
+                                        <constraint firstItem="0IJ-5a-bKB" firstAttribute="top" secondItem="Nc6-Ae-AhP" secondAttribute="top" constant="8" id="Wzd-oA-zI1"/>
+                                        <constraint firstItem="0IJ-5a-bKB" firstAttribute="leading" secondItem="Nc6-Ae-AhP" secondAttribute="leading" constant="8" id="Y6O-EW-h13"/>
+                                        <constraint firstAttribute="trailing" secondItem="0IJ-5a-bKB" secondAttribute="trailing" constant="8" id="eKz-z3-jf2"/>
+                                        <constraint firstItem="0IJ-5a-bKB" firstAttribute="top" secondItem="Nc6-Ae-AhP" secondAttribute="top" constant="190" id="nOo-ZM-evg"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="2qg-1c-tUH"/>
+                                            <exclude reference="QtS-40-fcr"/>
+                                            <exclude reference="Vq7-nw-uTy"/>
+                                            <exclude reference="5Uh-zr-rCu"/>
+                                            <exclude reference="7l6-hj-4rg"/>
+                                            <exclude reference="IkW-fM-OJo"/>
+                                            <exclude reference="Wzd-oA-zI1"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="foldedView" destination="p1Q-ne-lkE" id="GDp-2A-1ma"/>
+                                    <outlet property="foldedViewTopCons" destination="56Y-mQ-xq8" id="2sc-L3-7gp"/>
+                                    <outlet property="unfoldedView" destination="0IJ-5a-bKB" id="jUr-P7-n3x"/>
+                                    <outlet property="unfoldedViewTopCons" destination="nOo-ZM-evg" id="N1T-O8-Drh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RKB-fK-zMw" id="BYg-br-0tg"/>
+                            <outlet property="delegate" destination="RKB-fK-zMw" id="yiU-Gt-io4"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Shd-he-S9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="227" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pic" width="1920" height="1080"/>
+    </resources>
+</document>
